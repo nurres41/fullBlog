@@ -11,7 +11,7 @@ const PostItem = ({ post }) => {
     year: 'numeric'
   })
 
-  const linkPath = `/posts/${slug}/${image}`
+  const linkPath = `/posts/${slug}/`
   const imagePath = `/images/posts/${image}`
   
   return (
