@@ -1,6 +1,7 @@
 import React from 'react'
 import Hero from '../components/home-page/hero'
 import FeaturedPost from '../components/home-page/ featured-post'
+import { getFeaturedPosts } from '../lib/posts-util';
 
 const DUMMY_POSTS = [
   {
@@ -19,13 +20,24 @@ const DUMMY_POSTS = [
   },
 ];
 
-const Homepage = () => {
+const Homepage = (props) => {
   return (
     <>
      <Hero /> 
-     <FeaturedPost posts={DUMMY_POSTS} />
+     <FeaturedPost posts={props.posts} />
     </>
   )
+}
+
+export function getStaticProps() {
+  const featuredPosts = getFeaturedPosts()
+  return {
+    props: {
+      posts: featuredPosts
+    },
+    // after data change deployment we gonna check every 60 sec
+    revalidate: 10
+  }
 }
 
 export default Homepage
