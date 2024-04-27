@@ -1,10 +1,9 @@
 import React from 'react'
+import PostContent from '../../components/posts/post-detail/post-content'
 
 const SinglePostPage = () => {
   return (
-    <div>
-      
-    </div>
+    <PostContent />
   )
 }
 
