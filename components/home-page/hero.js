@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <section className={classes.hero}>
       <div className={classes.image}>
-        <Image src='/images/site/max.png' alt='An image showing user' width={300} height={300} />
+        <Image src='/images/site/max.jpg' alt='An image showing user' width={300} height={300} />
       </div>
       <h1>Hi, I am Nuri</h1>
       <p>
