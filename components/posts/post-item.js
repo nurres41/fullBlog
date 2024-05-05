@@ -12,7 +12,7 @@ const PostItem = ({ post }) => {
   })
 
   const linkPath = `/posts/${slug}/`
-  const imagePath = `/images/posts/${image}`
+  const imagePath = `/images/posts/${slug}/${image}`
   
   return (
     <li className={classes.post}>
