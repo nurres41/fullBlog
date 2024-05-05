@@ -12,6 +12,8 @@
   .content p {
     color: var(--color-grey-800);
   }
+
+
   
   .content .image {
     margin: var(--size-4) auto;
