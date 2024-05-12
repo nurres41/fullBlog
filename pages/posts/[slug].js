@@ -1,6 +1,7 @@
 import React from "react";
 import PostContent from "../../components/posts/post-detail/post-content";
 import { getPostData, getPostFiles } from "../../lib/posts-util";
+import Head from "next/head";
 
 const SinglePostPage = (props) => {
   return (
